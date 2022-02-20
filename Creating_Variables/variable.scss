@@ -6,4 +6,13 @@ $text-color: #fff;
 $sizeHeader: 24px;
 body{
     background: $text-color;
+    //applying map
+    font-weight: map-get($font-weights, light);
 }
+// map variable fontWeights
+// can also include map variables of colors, backgroundImages, fontFamily. 
+$font-weights: (
+    "light": 400, // similar to object "key" : value in JS
+    "regular": 500,
+    "bold": 900
+);
