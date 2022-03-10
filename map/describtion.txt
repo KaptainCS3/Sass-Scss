@@ -1,0 +1,32 @@
+creating a map.
+--------syntax1--------
+$variableName: (
+    'key': value,
+    'key': value,
+    'key': value,
+         .
+         .
+         .
+         .
+         . 
+); //! don't forget the semi colone else you get an Error.
+
+
+accessing values from the map function in Scss.
+
+--------syntax--------
+targenEl{
+
+cssproperty: mag-get($variableName, key);
+
+}
+
+//Nesting maps
+
+$colorMap: (
+    primary: (
+        base:  #00abc9,
+        dark:  #009cb7,
+        light: #c7e8ee
+    ),
+);
