@@ -1,18 +1,25 @@
-
 // declaring variables in scss
 $primary-color: #f323e3;
 $accent-color: #ff652f;
 $text-color: #fff;
 $sizeHeader: 24px;
-body{
-    background: $text-color;
-    //applying map
-    font-weight: map-get($font-weights, light);
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  &_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   .container_content{
+    display: flex ;
+    height: 400px;   
+    padding: 2rem;
+    .content{
+        padding: inherit;
+    }
+  }
+  }
+ 
 }
-// map variable fontWeights
-// can also include map variables of colors, backgroundImages, fontFamily. 
-$font-weights: (
-    "light": 400, // similar to object "key" : value in JS
-    "regular": 500,
-    "bold": 900
-);
