@@ -1,24 +1,32 @@
-$font-weight : (
-    'regular': 300,
-    'light': 400,
-    'bold': 700 
+$font-weights: (
+  "light": 400,
+  // similar to object "key" : value in JS
+  "regular": 500,
+  "bold": 900,
 );
-$font-familiy:(
-    'paragraph': 20px
+body {
+  // background: $text-color;
+  //applying map
+  // font-weight: map-get($font-weights, light);
+}
+// map variable fontWeights
+// can also include map variables of colors, backgroundImages, fontFamily.
+
+$font-familiy: (
+  "paragraph": 20px,
 );
 
-
-body{
-    width: 1000px;
-    margin: 20px auto;
+body {
+  width: 1000px;
+  margin: 20px auto;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: mag-get($font-weight, bold);
-    text-align: center;
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: mag-get($font-weight, bold);
+  text-align: center;
 }
-p{
-    color: aqua;
-    font-size: map-get($font-familiy, paragraph );
+p {
+  color: aqua;
+  font-size: map-get($font-familiy, paragraph);
 }
